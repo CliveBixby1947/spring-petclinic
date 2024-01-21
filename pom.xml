@@ -167,15 +167,15 @@
          <groupId>org.owasp</groupId>
          <artifactId>dependency-check-maven</artifactId>
          <version>9.0.9</version>
-         <reportSets>
-            <reportSet>
-                <reports>
-                    <report>aggregate</report>
-                </reports>
-            </reportSet>
-         </reportSets>
          <executions>
             <execution>
+               <reportSets>
+                  <reportSet>
+                      <reports>
+                          <report>aggregate</report>
+                      </reports>
+                  </reportSet>
+               </reportSets>
                <goals>
                   <goal>check</goal>
                </goals>
