@@ -164,6 +164,18 @@
         </executions>
       </plugin>
       <plugin>
+         <groupId>org.owasp</groupId>
+         <artifactId>dependency-check-maven</artifactId>
+         <version>9.0.9</version>
+         <executions>
+            <execution>
+               <goals>
+                  <goal>check</goal>
+               </goals>
+            </execution>
+         </executions>
+      </plugin>
+      <plugin>
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>
         <version>${spring-format.version}</version>
