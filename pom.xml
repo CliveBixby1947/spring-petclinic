@@ -164,16 +164,15 @@
         </executions>
       </plugin>
       <plugin>
-          <groupId>org.owasp</groupId>
-          <artifactId>dependency-check-maven</artifactId>
-          <version>9.0.9</version>
-          <reportSets>
-              <reportSet>
-                  <reports>
-                      <report>aggregate</report>
-                  </reports>
-              </reportSet>
-          </reportSets>
+         <groupId>org.owasp</groupId>
+         <artifactId>dependency-check-maven</artifactId>
+         <version>9.0.9</version>
+         <configuration>
+            <formats>
+               <format>html</format>
+               <format>json</format>
+            </formats>
+         </configuration>
       </plugin>
       <plugin>
         <groupId>io.spring.javaformat</groupId>
